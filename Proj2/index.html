@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Colorado Education Visualizations </title>
+
+  <!-- Boostrap Stylesheet -->
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- Our own CSS stylesheet -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.css" media="screen">
+  <link rel="stylesheet" href="static/style.css" media="screen">
+  <link rel="icon" href="static/favicon.ico" type="image/x-icon" />
+
+</head>
+
+<body>
+  <!-- Begin Navbar -->
+  <nav class="navbar navbar-expand-lg">  <!--navbar-light bg-light--> 
+    <a class="navbar-brand" href="#" id="brandlogo">
+      <img border="0" alt="Home" src="schoolhouse.jpg" width="100" height="100"">&nbsp&nbspColorado Education
+                </a> 
+  
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class=" collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Visualizations
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Scores</a>
+            <a class="dropdown-item" href="#">Turnover</a>
+            <a class="dropdown-item" href="#">Salaries</a>
+            <a class="dropdown-item" href="#">Budget</a>
+        </li>
+        
+  </nav>
+  <!-- End of navbar -->
+  <br>
+  <br>
+
+  <div class="container-fluid">
+      <div class="row teacher-salaries">
+        <div class="col-12 col-md-4">
+          <p><h5>Average Teacher Salaries For Selected CO Districts</h5>
+            Data indicates....
+          </p>
+        </div>
+        <div class="col-12 col-md-8">
+            <div id="container" style="width: 75%;">
+                <canvas id="teacher-salaries-canvas"></canvas>
+            </div>
+        </div>
+      </div>
+    <div class="row performance-scores">
+      <div class="col-12 col-md-4">
+        <p><h5>Average Test Scores For Selected CO Districts</h5>
+          Data indicates....
+        </p>
+      </div>
+      <div class="col-12 col-md-8">
+          <div id="container" style="width: 75%;">
+              <canvas id="performance-score-canvas"></canvas>
+            </div>
+      </div>
+    </div>
+    <div class="row teacher-turnover">
+      <div class="col-12 col-md-4">
+        <p><h5>Average Teacher Turnover For Selected CO Districts</h5>
+          Data indicates....
+        </p>
+      </div>
+      <div class="col-12 col-md-8">
+          <div id="container" style="width: 75%;">
+              <canvas id="teacher-turnover-canvas"></canvas>
+            </div>
+      </div>
+    </div>
+    <div class="row district-budget">
+      <div class="col-12 col-md-4">
+        <p><h5>Average Budget For Selected CO Districts</h5>
+          Data indicates....
+        </p>
+      </div>
+      <div class="col-12 col-md-8">
+          <div id="container" style="width: 75%;">
+              <canvas id="district-budget-canvas"></canvas>
+            </div>
+      </div>
+    </div>
+
+    <!-- jQuery CDN -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <!-- Bootstrap CDN -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
+
+    <!-- <script src="../../../../dist/2.8.0/Chart.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+    <script src="static/logic.js"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
+</body>
+
+</html>

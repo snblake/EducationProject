@@ -1,0 +1,38 @@
+{
+    "district": [
+        "Adams",
+        "Jefferson",
+        "Douglas",
+        "Denver",
+        "CherryCreek",
+        "Boulder",
+        "Colorado Springs",
+        "Poudre",
+        "Wells",
+        "Bennet",
+        "Brighton",
+        "Centennial",
+        "Adams 12",
+        "Littleton",
+        "Salida",
+        "Eagle"
+    ],
+    "teacherCount": [
+        7,
+        6,
+        15,
+        66,
+        3,
+        18,
+        7,
+        10,
+        7,
+        6,
+        15,
+        66,
+        3,
+        18,
+        7,
+        10
+    ]
+}
